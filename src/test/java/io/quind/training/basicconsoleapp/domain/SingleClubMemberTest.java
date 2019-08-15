@@ -28,5 +28,6 @@ class SingleClubMemberTest {
             "3, S, Name3, 200, 3"
     })
     void testGetSet(int memberID, char memberType, String name, double fees, int club) {
+
     }
 }
