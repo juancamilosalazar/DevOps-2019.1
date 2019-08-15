@@ -8,7 +8,6 @@ pipeline {
             //Inserte su declaracion aqui
               steps {
                  sh './gradlew clean test --no-daemon' //run a gradle task
-                 sh './gradlew test'
                 junit 'build/test-results/test/*.xml'
               }
 
