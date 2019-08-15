@@ -4,7 +4,6 @@ plugins {
     id 'eclipse'
     id 'org.sonarqube' version '2.7.1'
     id 'jacoco'
-    id "org.sonarqube" version "2.7.1"
 }
 
 group 'io.quind.training'
@@ -34,7 +33,6 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter:5.5.1')
     testImplementation 'org.mockito:mockito-inline:2.13.0'
     testCompile "org.mockito:mockito-core:2.+"
-    //classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7.1"
 }
 
 test {
