@@ -44,4 +44,7 @@ test {
 
 jar {
 //missing
+    manifest {
+        attributes 'main': 'src.main.java.io.quind.training.basicconsoleapp'
+    }
 }
