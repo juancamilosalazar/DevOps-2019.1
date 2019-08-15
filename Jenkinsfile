@@ -7,8 +7,13 @@ pipeline {
         stage ('Unit Tests') {
             //Inserte su declaracion aqui
               steps {
-                sh './gradlew build'
-                junit 'build/test-results/test/*.xml'
+                    try {
+                        sh './gradlew clean test --no-daemon' //run a gradle task
+                    } finally {
+                        junit '**/build/test-results/test/*.xml' //make the junit test results available in any case (success & failure)
+                    }
+               // sh './gradlew test'
+               // junit 'build/test-results/test/*.xml'
               }
 
         }
