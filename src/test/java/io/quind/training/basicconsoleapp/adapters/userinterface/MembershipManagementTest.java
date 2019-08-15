@@ -39,9 +39,6 @@ class MembershipManagementTest {
         assertEquals(expected,result);
         mm.removeMember(buildList());
         mm.printMemberInfo(buildList());
-        FileHandler fileHandler= new FileHandler();
-        fileHandler.appendFile(new Member(5,'1',"sdads",234523.0D));
-        fileHandler.overwriteFile(buildList());
 
     }
 
